@@ -24,22 +24,10 @@ import Hero from '../components/Hero.astro';
 				<h2 class="section-title">Background</h2>
 				<div class="content">
 					<p>
-						Lorem ipsum dolor sit amet, <a href="https://astro.build/">Astro</a> makes people happy.
-						Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl condimentum
-						id venenatis a condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu odio ut sem nulla
-						pharetra diam sit amet. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare.
+						Ana Luisa was born in Mexico from an American mother and a Mexican father. Her acrylics and mixed media paintings are colorful and textured.
 					</p>
 					<p>
-						Arcu dui vivamus arcu felis bibendum ut tristique et egestas. Eget gravida cum sociis
-						natoque penatibus. Cras fermentum odio eu feugiat pretium nibh. Proin nibh nisl
-						condimentum id venenatis. Porta nibh venenatis cras sed felis eget velit. Id diam vel
-						quam elementum pulvinar etiam non.
-					</p>
-					<p>
-						Ultrices tincidunt arcu non sodales neque sodales ut. Sed enim ut sem viverra aliquet
-						eget sit amet. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra.
-						Viverra accumsan in nisl nisi scelerisque eu ultrices. In massa tempor nec feugiat nisl
-						pretium fusce.
+						Her present work is influenced by her travels, especially by the colors of Mexico. At a first glance they may look childlike because they are inspired by childhood memories, but they are more profound that what first meets the eye. They talk about family unity, about choosing happy memories instead of the difficult times that we all go through at some point in life, she wants to make her viewers feel the warmth of happy memories when they see her work.
 					</p>
 				</div>
 			</section>
@@ -100,6 +88,12 @@ import Hero from '../components/Hero.astro';
 	.content :global(a:hover),
 	.content :global(a:focus) {
 		text-decoration-color: currentColor;
+	}
+
+	.content p {
+		margin-bottom: 1rem;
+		font-size: var(--text-md);
+		line-height: 1.75;
 	}
 
 	@media (min-width: 50em) {

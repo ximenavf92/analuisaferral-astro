@@ -28,35 +28,35 @@ const projects = (await getCollection('work'))
 <BaseLayout>
 	<div class="stack gap-20 lg:gap-48">
 		<div class="wrapper stack gap-8 lg:gap-20">
-			<header class="hero">
+			<section class="hero">
 				<Hero
-					title="Hello, my name is Jeanine White"
-					tagline="I am a Creative Developer who is currently based in Portland, Oregon."
+					title="Ana Luisa Ferral"
+					tagline="is a Mexican American artist based out of San Antonio, Texas"
 					align="start"
 				>
 					<div class="roles">
-						<Pill><Icon icon="code" size="1.33em" /> Developer</Pill>
-						<Pill><Icon icon="microphone-stage" size="1.33em" /> Speaker</Pill>
-						<Pill><Icon icon="pencil-line" size="1.33em" /> Writer</Pill>
+						<Pill><Icon icon="paint-brush" size="1.33em" /> Acrylic</Pill>
+						<Pill><Icon icon="device-tablet" size="1.33em" /> Digital</Pill>
+						<Pill><Icon icon="images-square" size="1.33em" /> Mixed Media</Pill>
 					</div>
 				</Hero>
 
 				<img
-					alt="Jeanine White smiling in a red plaid shirt and tortoise shell glasses"
+					alt="A colorful line drawing of Ana Luisa with glasses, big red earrings, and curly hair"
 					width="480"
 					height="620"
 					src="/assets/portrait.jpg"
 				/>
-			</header>
+			</section>
 
-			<Skills />
+			<!-- <Skills />	 -->
 		</div>
 
 		<main class="wrapper stack gap-20 lg:gap-48">
-			<section class="section with-background with-cta">
+			<section class="section with-cta">
 				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Selected Work</h3>
-					<p>Take a look below at some of my featured work for clients from the past few years.</p>
+					<h3>The Art</h3>
+					<p>A preview of Ana's artwowrk</p>
 				</header>
 
 				<div class="gallery">
@@ -79,7 +79,7 @@ const projects = (await getCollection('work'))
 				</div>
 			</section>
 
-			<section class="section with-background bg-variant">
+			<!-- <section class="section with-background bg-variant">
 				<header class="section-header stack gap-2 lg:gap-4">
 					<h3>Mentions</h3>
 					<p>
@@ -99,7 +99,7 @@ const projects = (await getCollection('work'))
 						}
 					</Grid>
 				</div>
-			</section>
+			</section> -->
 		</main>
 
 		<ContactCTA />
@@ -137,7 +137,7 @@ const projects = (await getCollection('work'))
 		.roles {
 			margin-top: 0.5rem;
 			display: flex;
-			gap: 0.5rem;
+			gap: 1rem;
 		}
 
 		.hero img {
@@ -177,7 +177,7 @@ const projects = (await getCollection('work'))
 	}
 
 	.with-background.bg-variant::before {
-		--hero-bg: var(--bg-image-subtle-1);
+		/* --hero-bg: var(--bg-image-subtle-1); */
 	}
 
 	.section-header {

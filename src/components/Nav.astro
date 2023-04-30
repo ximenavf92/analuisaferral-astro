@@ -7,24 +7,20 @@ const textLinks: { label: string; href: string }[] = [
 	{ label: 'Home', href: '/' },
 	{ label: 'Work', href: '/work/' },
 	{ label: 'About', href: '/about/' },
+	{ label: 'Shop', href: 'https://etsy.com/' }
 ];
 
 /** Icon links to social media — edit these with links to your profiles! */
 const iconLinks: { label: string; href: string; icon: IconProps['icon'] }[] = [
-	{ label: 'Twitter', href: 'https://twitter.com/me', icon: 'twitter-logo' },
-	{ label: 'Twitch', href: 'https://twitch.tv/me', icon: 'twitch-logo' },
-	{ label: 'GitHub', href: 'https://github.com/me', icon: 'github-logo' },
-	{ label: 'CodePen', href: 'https://codepen.io/me', icon: 'codepen-logo' },
-	{ label: 'dribbble', href: 'https://dribbble.com/me', icon: 'dribbble-logo' },
-	{ label: 'YouTube', href: 'https://www.youtube.com/@me/', icon: 'youtube-logo' },
+	{ label: 'Instagram', href: 'https://www.instagram.com/anukmx/', icon: 'instagram-logo' }
 ];
 ---
 
 <nav>
 	<div class="menu-header">
 		<a href="/" class="site-title">
-			<Icon icon="terminal-window" color="var(--accent-regular)" size="1.6em" gradient />
-			Jeanine White
+			<img src="../assets/analuisaferral-logo-white.svg" alt="Ana Luisa Ferral" width="200">
+			
 		</a>
 		<menu-button>
 			<template>
@@ -69,10 +65,10 @@ const iconLinks: { label: string; href: string; icon: IconProps['icon'] }[] = [
 					))
 				}
 			</div>
-
+<!-- 
 			<div class="theme-toggle">
 				<ThemeToggle />
-			</div>
+			</div> -->
 		</div>
 	</div>
 </nav>
@@ -116,8 +112,8 @@ const iconLinks: { label: string; href: string; icon: IconProps['icon'] }[] = [
 	nav {
 		z-index: 9999;
 		position: relative;
-		font-family: var(--font-brand);
-		font-weight: 500;
+		font-family: var(--font-body);
+		font-weight: 600;
 		margin-bottom: 3.5rem;
 	}
 
@@ -221,7 +217,7 @@ const iconLinks: { label: string; href: string; icon: IconProps['icon'] }[] = [
 		display: flex;
 		padding: var(--icon-padding);
 		text-decoration: none;
-		color: var(--accent-dark);
+		color: var(--accent-regular);
 		transition: color var(--theme-transition);
 	}
 
@@ -263,14 +259,15 @@ const iconLinks: { label: string; href: string; icon: IconProps['icon'] }[] = [
 			font-size: var(--text-sm);
 			border-radius: 999rem;
 			border: 0;
-			padding: 0.5rem 0.5625rem;
-			background: radial-gradient(var(--gray-900), var(--gray-800) 150%);
+    		padding: 0.75rem 1rem;
+			/* background: radial-gradient(var(--gray-900), var(--gray-800) 150%); */
+			background: var(--gray-900);
 			box-shadow: var(--shadow-md);
 		}
 
 		.nav-items::before {
 			position: absolute;
-			inset: -1px;
+			inset: -2px;
 			content: '';
 			background: var(--gradient-stroke);
 			border-radius: 999rem;
